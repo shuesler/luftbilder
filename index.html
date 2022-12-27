@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Demo script smapshot</title>
+    <script type="module" src="https://cdn.jsdelivr.net/gh/Vince17/wc-smapshot-pictures@master/dist/components/element_smapshot.js"></script>
+    <script type="module" src="https://cdn.jsdelivr.net/gh/Vince17/wc-smapshot-pictures@master/dist/components/map_smapshot.js"></script>
+    <style>
+      .responsive {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+      @media (prefers-color-scheme: dark) {
+        body { background: #444444; }}
+      @media (prefers-color-scheme: light) {
+        body { background: #FFFFFF; }}
+      map-smapshot, element-smapshot {
+        margin: auto;
+        width: 100%;
+        margin: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="responsive">
+      <element-smapshot limit="20" lat="47.176166" long="8.124468"></element-smapshot>
+      <element-smapshot limit="20" lat="47.17459043655223" long="8.214313985462908"></element-smapshot>
+      <!-- <map-smapshot colorStyle='red' attributionCust='HEIG-VD' colorStyle='#2488e5' urlMapLight='https://{s}.basemaps.cartocdn.com/rastertiles/light_all/{z}/{x}/{y}.png' original_id='LBS_L1-941205' ></map-smapshot>
+      <map-smapshot colorStyle='red' attributionCust='HEIG-VD' colorStyle='#2488e5' urlMapLight='https://{s}.basemaps.cartocdn.com/rastertiles/light_all/{z}/{x}/{y}.png' original_id='LBS_L1-747486' ></map-smapshot> -->
+    </div>
+  </body>
+</html>
